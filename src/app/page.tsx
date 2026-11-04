@@ -1,9 +1,7 @@
 import GameCard from "@/components/GameCard";
-import { GAMES, GITHUB_URL, NEXT_UP, THREADS_URL } from "@/data/games";
+import { GAMES, GITHUB_URL, THREADS_URL } from "@/data/games";
 
 export default function Home() {
-  const nextPart = GAMES.length + 1;
-
   return (
     <>
       <div className="awning" aria-hidden="true" />
@@ -15,7 +13,7 @@ export default function Home() {
             <span className="text-lamp">향수병</span> 게임즈
           </h1>
           <p className="m-0 max-w-[52ch] leading-relaxed text-ink-dim">
-            캐나다엔 붕어빵도 없고 김장할 대야도 없어서 직접 만들었어요. 로그인 없이 바로, 한 판에 1분이면 끝나요.
+            캐나다엔 붕어빵도, 호떡 리어카도, 군고구마 드럼통도 없어서 직접 만들었어요. 로그인 없이 바로, 한 판에 1분이면 끝나요.
           </p>
         </header>
 
@@ -32,16 +30,14 @@ export default function Home() {
               <GameCard key={game.slug} game={game} />
             ))}
 
-            {/* next game teaser */}
+            {/* end of the winter snack series */}
             <article className="flex flex-col justify-center gap-3 rounded-xl border-2 border-dashed border-line p-6 text-center sm:col-span-2">
               <p className="m-0 font-ui text-lg">
-                <span className="text-lamp">{nextPart}탄</span> 준비 중…
+                겨울 간식 시리즈 <span className="text-lamp">완결</span> 🎉
               </p>
-              <p className="m-0 text-ink-dim">
-                {NEXT_UP.join(" vs ")}? 쓰레드에서 골라주세요.
-              </p>
+              <p className="m-0 text-ink-dim">다음엔 완전히 새로운 걸 만드는 중이에요. 소식은 쓰레드에서!</p>
               <a href={THREADS_URL} className="btn btn-ghost self-center">
-                @anab.uilds 에서 추천하기
+                @anab.uilds 팔로우하기
               </a>
             </article>
           </div>

@@ -9,7 +9,7 @@ const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "향수병 게임즈",
+  title: { default: "향수병 게임즈", template: "%s | 향수병 게임즈" },
   description: "토론토에서 한국 그리워서 만드는 웹게임 모음. 붕어빵 굽기, 김장하기.",
   openGraph: {
     title: "향수병 게임즈",

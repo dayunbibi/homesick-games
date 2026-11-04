@@ -11,6 +11,9 @@
   --color-ink: #f6ece0;
   --color-ink-dim: #b9a99c;
   --color-line: #4a3a3f;
+  --color-good: #e9b544;
+  --color-warn: #e07b39;
+  --color-bad: #c4412f;
 
   --font-sign: "Black Han Sans", "Jua", system-ui, sans-serif;
   --font-ui: "Jua", "Gowun Dodum", system-ui, sans-serif;
@@ -55,10 +58,26 @@ body {
     radial-gradient(circle at 51px 0, var(--color-tarp-light) 16px, transparent 17px) 0 0 / 68px 12px repeat-x;
 }
 
-a:focus-visible {
+a:focus-visible,
+canvas:focus-visible {
   outline: 3px solid var(--color-ink);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* game instructions under the canvas */
+.hint {
+  margin: 0;
+  min-height: 1.5em;
+  text-align: center;
+  font-family: var(--font-ui);
+  font-size: 19px;
+}
+.hint small {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--color-ink-dim);
 }
 
 @layer components {
@@ -84,6 +103,42 @@ a:focus-visible {
     background: transparent;
     border: 1px solid var(--color-line);
     box-shadow: none;
+  }
+  button.btn {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  .btn:focus-visible {
+    outline: 3px solid var(--color-ink);
+    outline-offset: 3px;
+  }
+  .btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .btn-big {
+    font-size: 21px;
+    padding: 18px;
+    border-radius: 12px;
+  }
+  .btn-chip {
+    text-align: left;
+    color: var(--color-ink);
+    background: var(--color-night-2);
+    border: 1px solid var(--color-line);
+    box-shadow: 0 4px 0 #120d0f;
+  }
+  .btn-chip small {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 12px;
+    color: var(--color-ink-dim);
+  }
+  .btn-chip.picked {
+    opacity: 1;
+    border-color: var(--color-lamp);
+    box-shadow: 0 4px 0 var(--color-lamp-dark);
   }
 }
 
