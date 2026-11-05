@@ -30,12 +30,12 @@ export default function Home() {
               <GameCard key={game.slug} game={game} />
             ))}
 
-            {/* end of the winter snack series */}
+            {/* teaser for whatever comes next */}
             <article className="flex flex-col justify-center gap-3 rounded-xl border-2 border-dashed border-line p-6 text-center sm:col-span-2">
               <p className="m-0 font-ui text-lg">
-                겨울 간식 시리즈 <span className="text-lamp">완결</span> 🎉
+                다음 메뉴 <span className="text-lamp">준비 중</span>
               </p>
-              <p className="m-0 text-ink-dim">다음엔 완전히 새로운 걸 만드는 중이에요. 소식은 쓰레드에서!</p>
+              <p className="m-0 text-ink-dim">포차에 새 메뉴가 생기면 쓰레드에서 먼저 알려드려요!</p>
               <a href={THREADS_URL} className="btn btn-ghost self-center">
                 @anab.uilds 팔로우하기
               </a>

@@ -51,6 +51,16 @@ export const GAMES: Game[] = [
     url: "/goguma",
     repo: "https://github.com/dayunbibi/homesick-games",
   },
+  {
+    slug: "pojangmacha",
+    part: 5,
+    emoji: "🍢",
+    name: "향수병 포차",
+    blurb: "손님 5명이 메뉴 5개를 하나씩 주문해요. 염통꼬치 굽고 김밥 말고 떡볶이 졸여서 오늘 매출 영수증 뽑기.",
+    control: "문지르기 · 원 그리기 · 타이밍",
+    url: "https://pojangmacha-tawny.vercel.app",
+    repo: "https://github.com/dayunbibi/pojangmacha",
+  },
 ];
 
 export const THREADS_URL = "https://www.threads.com/@anab.uilds";
