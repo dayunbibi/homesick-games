@@ -10,10 +10,10 @@ const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: "향수병 게임즈", template: "%s | 향수병 게임즈" },
-  description: "토론토에서 한국 그리워서 만드는 웹게임 모음. 붕어빵 굽기, 김장하기.",
+  description: "토론토에서 한국이 그리워서 만드는 포잎이의 작은 인터넷 놀이터. 붕어빵 굽기, 향수병 포차, 김장하기, 호떡, 군고구마, 내 트리를 꾸며줘, AI 엄마 잔소리.",
   openGraph: {
     title: "향수병 게임즈",
-    description: "토론토에서 한국 그리워서 만드는 웹게임 모음",
+    description: "포잎이의 작은 인터넷 놀이터 🍀 설치 없이 바로 하는 한국 감성 웹게임",
     locale: "ko_KR",
     type: "website",
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#221a1d",
+  themeColor: "#fbf6ec",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

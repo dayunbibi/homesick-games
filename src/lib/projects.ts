@@ -7,5 +7,6 @@ export const projects: Project[] = [
  {id:'hotteok',thumbnail:'/images/thumbnails/hotteok.webp',title:'온라인 호떡 굽기',category:'game',description:'뒤집고 꾹 눌러서 노릇한 호떡을 구워 봐.',icon:'🥞',color:'peach',tags:['요리','타이밍'],href:'/hotteok'},
  {id:'goguma',thumbnail:'/images/thumbnails/goguma.webp',title:'온라인 군고구마',category:'game',description:'달콤하게 익은 고구마를 타이밍에 맞춰 꺼내 봐.',icon:'🍠',color:'lavender',tags:['요리','타이밍'],href:'/goguma'},
  {id:'tree',thumbnail:'/images/thumbnails/tree.webp',title:'내 트리를 꾸며줘',category:'webapp',description:'마음을 담은 장식 하나. 우리만의 트리를 함께 꾸며봐요.',icon:'🎄',color:'mint',tags:['함께하기','꾸미기'],href:'https://decorate-my-tree.vercel.app/'},
+ {id:'mom-nag',title:'AI 엄마 잔소리',category:'webapp',description:'방 사진 올리면 엄마가 등짝 스매싱 지수를 매겨줘. 각오하고 들어와!',icon:'🧹',color:'peach',tags:['AI','웃음'],href:'https://mom-nag.vercel.app'},
  {id:'studybloom',title:'스터디블룸',category:'webapp',description:'차곡차곡 쌓은 집중이 꽃이 되는 곳. 나만의 공부 정원.',icon:'🌷',color:'lavender',tags:['공부','정원'],href:null,comingSoon:true},
 ];
