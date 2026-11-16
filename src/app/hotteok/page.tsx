@@ -1,30 +1,9 @@
 import type { Metadata } from "next";
-import GameShell from "@/components/shared/GameShell";
-import HotteokGame from "@/components/hotteok/HotteokGame";
-
+import MarketGame from "@/components/market/MarketGame";
 export const metadata: Metadata = {
-  title: "온라인 호떡 굽기",
-  description: "속 고르고, 뒤집고, 누르개로 꾹. 너무 세게 누르면 꿀이 터져요.",
-  openGraph: {
-    title: "온라인 호떡 굽기",
-    description: "누르개로 꾹! 꿀 안 터지게 시장 1등 호떡 도전",
-    locale: "ko_KR",
-    type: "website",
-  },
+  title: "포잎이의 호떡 가게",
+  description: "포잎이 사장님이 되어 손님 주문대로 조리하고 판매하는 가게 게임",
 };
-
-export default function HotteokPage() {
-  return (
-    <GameShell
-      accent="호떡"
-      rest="굽기"
-      price={
-        <>
-          호떡 1장 <b className="font-normal text-tarp">1,500원</b>
-        </>
-      }
-    >
-      <HotteokGame />
-    </GameShell>
-  );
+export default function Page() {
+  return <MarketGame kind="hotteok" />;
 }
